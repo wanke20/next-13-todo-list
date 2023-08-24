@@ -1,7 +1,6 @@
 import { prisma } from "@/db";
 import Link from "next/link";
 import { TodoItem } from "@/components/TodoItem";
-import { redirect } from "next/navigation";
 
 function getTodos() {
   return prisma.todo.findMany();
